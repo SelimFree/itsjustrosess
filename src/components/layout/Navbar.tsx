@@ -49,9 +49,9 @@ export function Navbar({ links, className, ...props }: NavbarProps) {
         />
       )}
 
-      <header
+<header
         className={cn(
-          "sticky top-0 z-50 w-full transition-all duration-500 ease-in-out md:top-4 md:w-[95%] md:max-w-6xl md:mx-auto md:rounded-full bg-primary-500/90 backdrop-blur-xl shadow-sm border-b md:border border-white/20 h-18 md:h-20",
+          "fixed top-0 left-0 md:left-1/2 md:-translate-x-1/2 z-50 w-full transition-all duration-500 ease-in-out md:top-4 md:w-[95%] md:max-w-6xl md:rounded-full bg-primary-500/90 backdrop-blur-xl shadow-sm border-b md:border border-white/20 h-18 md:h-20",
           className
         )}
         {...props}
