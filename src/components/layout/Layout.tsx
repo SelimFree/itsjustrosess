@@ -1,0 +1,56 @@
+import { type ComponentProps, Suspense, forwardRef } from "react";
+import { Outlet } from "react-router-dom";
+import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
+import { Loading } from "../ui/Loading";
+import { cn } from "../../lib/utils";
+import ScrollToTop from "../utils/ScrollToTop";
+import { BackToTop } from "../ui/BackToTop";
+import { CookieBanner } from "../ui/CookieBanner";
+import { Breadcrumbs } from "../ui/Breadcrumbs";
+
+export type NavLinkItem = {
+  label: string;
+  href: string;
+};
+
+const globalNavLinks: NavLinkItem[] = [
+  { label: "home", href: "/" },
+  { label: "about", href: "/about" },
+  { label: "events", href: "/events" },
+  { label: "contact", href: "/contact" },
+];
+
+export const Layout = forwardRef<HTMLDivElement, ComponentProps<"div">>(
+  ({ className, ...props }, ref) => {
+    return (
+      <div
+        ref={ref}
+        className={cn(
+          "flex min-h-screen flex-col bg-gray-50 text-gray-800 font-sans antialiased overflow-x-hidden selection:bg-secondary-200 selection:text-secondary-900",
+          className
+        )}
+        {...props}
+      >
+        <ScrollToTop />
+
+        <Navbar links={globalNavLinks} />
+
+        <main className="grow relative flex flex-col w-full max-w-[100vw]">
+          <div className="absolute top-2 left-2 md:top-4 md:left-4 z-10 w-full max-w-full overflow-hidden">
+            <Breadcrumbs />
+          </div>
+
+          <Suspense fallback={<Loading />}>
+            <Outlet />
+          </Suspense>
+        </main>
+
+        <BackToTop />
+        <CookieBanner />
+
+        <Footer links={globalNavLinks} />
+      </div>
+    );
+  }
+);
