@@ -97,7 +97,7 @@ export function Footer({ links, className, ref, ...props }: FooterProps) {
           <Text
             className="text-sm font-display tracking-wider text-white/80 text-center"
           >
-            © {t("footer.rights", { year: new Date().getFullYear(), company: companyName })}
+            {t("footer.rights", { year: new Date().getFullYear(), company: companyName })}
           </Text>
         </div>
       </div>

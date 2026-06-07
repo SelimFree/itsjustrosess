@@ -13,7 +13,7 @@ export default function LegalPage({ title, lastUpdated, content }: LegalPageProp
   const { t } = useTranslation("legal");
 
   return (
-    <div className="relative overflow-hidden py-20 md:py-24 px-4 sm:px-6 lg:px-8">
+    <div className="relative overflow-hidden py-40 md:py-48 px-4 sm:px-6 lg:px-8">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-64 bg-accent-100/40 rounded-full blur-3xl -z-10" />
 
       <div className="mx-auto max-w-3xl bg-white p-8 md:p-12 rounded-[2.5rem] shadow-sm border border-gray-100">

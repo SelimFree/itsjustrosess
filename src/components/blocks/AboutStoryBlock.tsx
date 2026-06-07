@@ -40,7 +40,7 @@ export function AboutStoryBlock() {
     ];
 
     return (
-        <section className="relative w-full bg-white py-24 md:py-32 overflow-hidden">
+        <section className="relative w-full bg-white py-40 md:py-48 overflow-hidden">
 
             <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
 

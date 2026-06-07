@@ -37,7 +37,7 @@ export const Layout = forwardRef<HTMLDivElement, ComponentProps<"div">>(
         <Navbar links={globalNavLinks} />
 
         <main className="grow relative flex flex-col w-full max-w-[100vw]">
-          <div className="sticky top-20 left-2 md:top-26 md:left-4 z-10 w-full max-w-full overflow-hidden">
+          <div className="absolute top-20 left-2 md:top-26 md:left-0 z-10 w-full max-w-full overflow-hidden">
             <Breadcrumbs />
           </div>
 
