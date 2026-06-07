@@ -36,7 +36,7 @@ export function Footer({ links, className, ref, ...props }: FooterProps) {
               
               <div className="flex flex-col items-start justify-center">
                 <span className="font-display font-bold text-2xl md:text-3xl text-white tracking-wide transition-colors group-hover:text-white/90 leading-tight">
-                  It's just <br className="hidden lg:block xl:hidden" />
+                  It's Just <br className="hidden lg:block xl:hidden" />
                   <span className="text-secondary-200">Rosess</span>
                 </span>
               </div>

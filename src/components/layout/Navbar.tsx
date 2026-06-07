@@ -69,7 +69,7 @@ export function Navbar({ links, className, ...props }: NavbarProps) {
               </div>
 
               <span className="font-display font-bold text-lg md:text-xl text-white tracking-wide transition-colors group-hover:text-white/90">
-                It's just <span className="text-secondary-200">Rosess</span>
+                It's Just <span className="text-secondary-200">Rosess</span>
               </span>
             </Link>
           </div>
