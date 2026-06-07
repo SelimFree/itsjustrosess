@@ -1,0 +1,49 @@
+{
+  "HeroBlock": {
+    "tagline": "Find Your Spark",
+    "title": "Spark Change on Campus.",
+    "subtitle": "Join our university volunteer network. Build your skills, meet amazing people, and give back to the community in a meaningful way.",
+    "cta": "Get Involved",
+    "imageAlt": "Students volunteering together",
+    "marquee": "VOLUNTEER • CONNECT • GROW • VOLUNTEER • CONNECT • GROW • VOLUNTEER • CONNECT • GROW •"
+  },
+
+  "ImpactPillarsBlock": {
+    "sectionTitle": "We make impact easy.",
+    "sectionSubtitle": "Whether you have a green thumb or just want to help out, there is a place for you to grow with us.",
+    "planting": {
+      "title": "Urban Planting",
+      "desc": "Greening our campus and city spaces, one seedling at a time. Join our weekend digs."
+    },
+    "education": {
+      "title": "Eco-Education",
+      "desc": "Hosting workshops and talks to spread awareness about sustainable living and local flora."
+    },
+    "community": {
+      "title": "Community Hub",
+      "desc": "Connecting students with local green initiatives. Building friendships through shared goals."
+    }
+  },
+
+  "ImpactCounter": {
+    "title": "Small seeds, huge impact.",
+    "subtitle": "Look at what we've accomplished together this semester. Every single pair of hands makes a difference.",
+    "stats": {
+      "plants": "Trees & Seedlings Planted",
+      "volunteers": "Active Student Volunteers",
+      "hours": "Community Hours Donated"
+    }
+  },
+
+  "SocialSplitBlock": {
+    "social": {
+      "title": "Let's be friends.",
+      "subtitle": "Follow our journey, tag us in your plant pics, and stay in the loop with daily campus updates."
+    },
+    "join": {
+      "title": "Ready to dig in?",
+      "subtitle": "We are always looking for passionate students to join our crew. Head over to our contact form to officially become a member!",
+      "button": "Join the club"
+    }
+  }
+}

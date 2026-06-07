@@ -1,0 +1,115 @@
+{
+  "FutureEventsBlock": {
+    "tagline": "Implică-te",
+    "headline": "Evenimente viitoare",
+    "subheadline": "Notează-ți în calendar. Iată ce pregătim în campus în acest semestru.",
+    "buttons": {
+      "register": "Înregistrare",
+      "registerForEvent": "Înregistrare"
+    },
+    "modal": {
+      "footerText": "Ești gata să faci o schimbare? Rezervă-ți locul acum."
+    },
+    "events": {
+      "evt1": {
+        "title": "Curățenia de primăvară în campus",
+        "date": "24 mar",
+        "time": "09:00-14:00",
+        "location": "Curtea Principală",
+        "shortDesc": "Ia o lopată și alătură-te celei mai mari campanii de plantare din acest semestru. Micul dejun este asigurat!",
+        "fullDesc": [
+          "Colaborăm cu echipa de întreținere a universității pentru a planta peste 200 de arbuști nativi în jurul bibliotecii. Aceasta este cea mai mare inițiativă a semestrului și avem nevoie de ajutorul tuturor pentru a o realiza.",
+          "Mănușile, uneltele și un mic dejun cu covrigi vor fi oferite tuturor voluntarilor. Vă rugăm să purtați încălțăminte închisă, șosete groase și haine pe care nu vă deranjează să le murdăriți. Crema de protecție solară și pălăriile sunt foarte recomandate!",
+          "Ne vom întâlni la fântâna principală la ora 08:45 pentru un scurt instructaj de siguranță înainte de a ne împărți în patru echipe specializate. Dacă ajungeți târziu, vă rugăm să vă prezentați la cortul de înregistrare de lângă intrarea bibliotecii pentru a fi repartizați într-o zonă."
+        ]
+      },
+      "evt2": {
+        "title": "Atelier de agricultură urbană",
+        "date": "02 apr",
+        "time": "16:00-18:00",
+        "location": "Sala 302",
+        "shortDesc": "Învață cum să-ți cultivi propriile plante aromatice și legume direct în camera de cămin sau în apartament.",
+        "fullDesc": [
+          "Nu ai balcon? Nicio problemă! Invitatul nostru, Dr. Aris Thorne de la departamentul de Agricultură, va preda bazele hidroponiei și ale grădinăritului pe pervaz.",
+          "Vom aborda compoziția solului, necesarul de lumină pentru plantele de interior și cum să combați dăunătorii comuni fără substanțe chimice dure.",
+          "Fiecare participant va primi un kit de pornire care include semințe de busuioc și mentă, un mic ghiveci de teracotă și pământ special pentru plante de interior. Locurile sunt strict limitate la 40 de studenți din cauza capacității sălii, așa că vă rugăm să vă înregistrați din timp!"
+        ]
+      },
+      "evt3": {
+        "title": "Festivalul de Ziua Pământului",
+        "date": "22 Apr",
+        "time": "11:00-17:00",
+        "location": "Amphitheater",
+        "shortDesc": "Muzică live, rulote cu mâncare vegană și standuri ale comercianților eco-friendly. Cea mai mare petrecere a noastră din an.",
+        "fullDesc": [
+          "Sărbătorește Ziua Pământului alături de tot campusul! Găzduim un festival de amploare cu trupe indie locale, pop-up-uri cu haine second-hand sustenabile și trei dintre cele mai bune rulote cu mâncare vegană din oraș.",
+          "Festivalul durează toată ziua, așa că poți trece pe la noi între cursuri. Vom organiza și mini-ateliere în fiecare oră, acoperind subiecte de la compostare până la alternative la fast-fashion.",
+          "Vino la standul nostru principal pentru a afla despre viitoarele inițiative de vară, pentru a te înscrie în consiliul executiv sau pentru a achiziționa produse exclusive din bumbac 100% reciclat. Intrarea la festival este complet gratuită!"
+        ]
+      }
+    }
+  },
+  "PastEventsBlock": {
+    "tagline": "Impactul nostru",
+    "headline": "Uită-te ce am realizat.",
+    "subheadline": "Citește despre câteva dintre amintirile noastre preferate, proiecte comunitare și acțiunile masive de plantare din semestrele trecute.",
+    "buttonRecap": "Citește rezumatul complet",
+    "galleryHeading": "Galerie eveniment",
+    "galleryImageAlt": "Imagine galerie {{count}}",
+    "events": {
+      "past1": {
+        "title": "Restaurarea serei de iarnă",
+        "date": "MAR 2026",
+        "shortDesc": "Am petrecut weekendul înlocuind sticla spartă și instalând sisteme noi de irigare în sera istorică a campusului.",
+        "stats": {
+          "volunteers": "Voluntari",
+          "plantsSaved": "Plante salvate"
+        },
+        "paragraphs": [
+          "Sera istorică de botanică a fost neglijată timp de peste un deceniu. Când universitatea a anunțat planurile de a o demola, comunitatea noastră s-a mobilizat pentru a demonstra că poate fi încă un spațiu educațional vital.",
+          "În două zile geroase de decembrie, 45 de studenți au lucrat în schimburi. Am înlocuit 30 de geamuri crăpate, am curățat ani de alge de pe cadre și am instalat un nou sistem de irigare prin picurare inteligent, donat de departamentul de inginerie.",
+          "Astăzi, sera este complet operațională și este folosită de trei cursuri diferite de biologie pentru proiectele lor de cercetare de primăvară!"
+        ]
+      },
+      "past2": {
+        "title": "Plantarea arborilor în Parcul Orașului",
+        "date": "DEC 2025",
+        "shortDesc": "Parteneriat cu consiliul local pentru a planta puieți nativi de-a lungul noii fâșii pietonale de pe malul râului.",
+        "stats": {
+          "volunteers": "Voluntari",
+          "saplingsPlanted": "Puieți plantați"
+        },
+        "paragraphs": [
+          "Când orașul a deschis noua alee pietonală, am observat o lipsă acută de umbră. Am propus consiliului local să ne ocupăm noi de amenajarea peisagistică folosind exclusiv specii de arbori nativi, rezistenți la secetă.",
+          "Participarea a fost incredibilă. Peste 80 de studenți s-au prezentat sâmbătă la ora 07:00 dimineața. Ne-am împărțit în echipe de trei: cei care sapă, cei care plantează și cei care udă.",
+          "Până la prânz, plantasem cu succes 200 de puieți de stejar și mesteacăn. În câțiva ani, întreaga alee va fi o frumoasă boltă umbrită de care comunitatea se va bucura."
+        ]
+      },
+      "past3": {
+        "title": "Campania de compostare de toamnă",
+        "date": "OCT 2025",
+        "shortDesc": "Colectarea deșeurilor alimentare din cămine și transformarea lor în sol bogat în nutrienți pentru grădinile comunitare.",
+        "stats": {
+          "volunteers": "Voluntari",
+          "wasteDiverted": "Deșeuri reciclate"
+        },
+        "paragraphs": [
+          "Deșeurile alimentare reprezintă una dintre cele mai mari probleme în căminele universitare. Am instalat coșuri de colectare în trei cămine principale și am provocat studenții să își colecteze deșeurile organice timp de două săptămâni.",
+          "Rezultatele au fost uimitoare. Am colectat peste 225 kg de coji de fructe, zaț de cafea și resturi de legume. Am petrecut weekendul amestecându-le în compostarele din campus.",
+          "Acel compost s-a maturat și a fost folosit pentru a fertiliza grădinile de legume de primăvară, creând un sistem perfect de circuit închis chiar aici în campus."
+        ]
+      }
+    }
+  },
+  "PartnersBlock": {
+    "headline": "Susținuți de partenerii noștri locali extraordinari",
+    "partners": {
+      "google": "Logo Google",
+      "ibm": "Logo IBM",
+      "microsoft": "Logo Microsoft",
+      "amazon": "Logo Amazon",
+      "cisco": "Logo Cisco",
+      "tesla": "Logo Tesla"
+    }
+  }
+}

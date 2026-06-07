@@ -1,0 +1,104 @@
+{
+  "custom": {
+    "lastUpdatedLabel": "Ultima actualizare: "
+  },
+
+  "privacyPolicy": {
+    "title": "Politica de confidențialitate",
+    "lastUpdated": "10 aprilie 2026",
+
+    "section1": {
+      "title": "1. Introducere",
+      "text": "La {{company}}, respectăm confidențialitatea dumneavoastră și ne angajăm să protejăm datele cu caracter personal. Această politică de confidențialitate vă va informa cu privire la modul în care gestionăm datele dumneavoastră cu caracter personal atunci când vizitați site-ul nostru."
+    },
+
+    "section2": {
+      "title": "2. Datele pe care le colectăm",
+      "text": "Putem colecta, utiliza, stoca și transfera diferite tipuri de date cu caracter personal despre dumneavoastră, pe care le-am grupat după cum urmează:",
+      "dataList": [
+        {
+          "label": "Date de identitate:",
+          "desc": "Include prenumele, numele de familie și titlul."
+        },
+        {
+          "label": "Date de contact:",
+          "desc": "Include adresa de e-mail și numerele de telefon."
+        },
+        {
+          "label": "Date tehnice:",
+          "desc": "Include adresa IP, tipul de browser și setările fusului orar."
+        },
+        {
+          "label": "Date de utilizare:",
+          "desc": "Include informații despre modul în care utilizați site-ul nostru web."
+        }
+      ]
+    },
+
+    "section3": {
+      "title": "3. Securitatea datelor",
+      "text": "Am implementat măsuri de securitate adecvate pentru a preveni pierderea accidentală, utilizarea sau accesarea neautorizată a datelor dumneavoastră cu caracter personal."
+    }
+  },
+
+  "termsOfService": {
+    "title": "Termeni și condiții",
+    "lastUpdated": "10 aprilie 2026",
+
+    "section1": {
+      "title": "1. Acceptarea termenilor",
+      "text": "Prin accesarea sau utilizarea site-ului {{company}}, sunteți de acord să fiți legat de acești Termeni și condiții, precum și de toate legile și reglementările aplicabile."
+    },
+
+    "section2": {
+      "title": "2. Licența de utilizare",
+      "text": "În baza acestei licențe, nu aveți permisiunea de a:",
+      "list": [
+        "Modifica sau copia materialele pentru uz comercial;",
+        "Încerca să decompilați sau să efectuați inginerie inversă asupra oricărui software de pe site;",
+        "Elimina orice mențiune privind drepturile de autor sau alte notificări de proprietate;",
+        "Transfera materialele către o altă persoană sau a „oglindi” materialele pe un alt server."
+      ]
+    },
+
+    "section3": {
+      "title": "3. Legea aplicabilă",
+      "text": "Acești termeni și condiții sunt guvernați și interpretați în conformitate cu legile din {{country}}."
+    }
+  },
+
+  "cookiePolicy": {
+    "title": "Politica privind modulele cookie",
+    "lastUpdated": "10 aprilie 2026",
+
+    "section1": {
+      "title": "1. Ce sunt modulele cookie?",
+      "text": "Modulele cookie sunt mici fișiere text care sunt plasate pe computerul sau dispozitivul dumneavoastră mobil atunci când vizitați un site web. Acestea sunt utilizate pe scară largă pentru a face site-urile să funcționeze mai eficient și pentru a oferi informații proprietarilor site-ului."
+    },
+
+    "section2": {
+      "title": "2. Cum utilizăm modulele cookie",
+      "text": "Utilizăm modulele cookie din mai multe motive, inclusiv:",
+      "list": [
+        {
+          "label": "Module cookie esențiale:",
+          "desc": "Sunt necesare pentru funcționarea site-ului (de exemplu, pentru securitate și accesibilitate)."
+        },
+        {
+          "label": "Module cookie de performanță:",
+          "desc": "Ne ajută să înțelegem modul în care vizitatorii interacționează cu site-ul nostru, prin colectarea și raportarea informațiilor în mod anonim."
+        },
+        {
+          "label": "Module cookie funcționale:",
+          "desc": "Permit site-ului să rețină alegerile pe care le faceți (cum ar fi limba preferată) pentru a oferi funcționalități îmbunătățite."
+        }
+      ]
+    },
+
+    "section3": {
+      "title": "3. Gestionarea preferințelor",
+      "textBefore": "Majoritatea browserelor web permit controlul asupra celor mai multe module cookie prin setările browserului. Pentru a afla mai multe despre modulele cookie, inclusiv cum să vedeți ce module cookie au fost setate și cum să le gestionați sau să le ștergeți, vizitați ",
+      "linkText": "allaboutcookies.org"
+    }
+  }
+}

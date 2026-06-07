@@ -1,0 +1,47 @@
+{
+  "ContactFormBlock": {
+    "subtitle": "Hai să comunicăm",
+    "title": "Ne-ar plăcea să aflăm părerea ta.",
+    "description": "Fie că vrei să faci voluntariat, să devii partener într-o inițiativă universitară sau pur și simplu să ne saluți, scrie-ne un mesaj mai jos și echipa noastră îți va răspunde în curând.",
+    "securityTitle": "Datele tale sunt în siguranță",
+    "securityDescription": "Folosim informațiile tale doar pentru a răspunde solicitării tale. Nu partajăm niciodată datele tale cu terțe părți.",
+    "directContactTitle": "Sau contactează-ne direct",
+    "emailAddress": "hello@itsjustroses.org",
+    "directContactLabel": "De obicei răspundem în 24 de ore",
+    "errorMessage": "Nu am putut trimite mesajul tău momentan. Te rugăm să încerci din nou mai târziu.",
+    "errorTitle": "Ceva nu a funcționat corect",
+    "buttonSending": "Se trimite...",
+    "buttonSubmit": "Trimite mesajul",
+    "successTitle": "Mesaj primit!",
+    "successMessage": "Îți mulțumim că ne-ai contactat. Mesajul tău a fost „plantat” în inbox-ul nostru și îți vom răspunde imediat ce încolțește.",
+    "successButton": "Trimite un alt mesaj",
+    "form": {
+      "firstNameLabel": "Prenume",
+      "firstNamePlaceholder": "Rose",
+      "lastNameLabel": "Nume",
+      "lastNamePlaceholder": "White",
+      "companyLabel": "Organizație / Universitate",
+      "companyPlaceholder": "ex. UPJ",
+      "emailLabel": "Adresă de e-mail",
+      "emailPlaceholder": "rose@exemplu.ro",
+      "departmentLabel": "Ce subiect te interesează?",
+      "departmentOptions": {
+        "default": "Selectează o opțiune...",
+        "event_participation": "Participare la eveniment",
+        "volunteer": "Voluntariat",
+        "partnership": "Parteneriat în campus",
+        "media": "Media / Presă",
+        "other": "Altele"
+      },
+      "eventLabel": "La ce eveniment dorești să participi?",
+      "eventOptions": {
+        "default": "Selectează un eveniment...",
+        "event1": "Curățenia de primăvară în campus",
+        "event2": "Atelier de agricultură urbană",
+        "event3": "Festivalul de Ziua Pământului"
+      },
+      "messageLabel": "Mesajul tău",
+      "messagePlaceholder": "Cu ce te putem ajuta astăzi?"
+    }
+  }
+}

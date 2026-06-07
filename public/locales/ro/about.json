@@ -1,0 +1,42 @@
+{
+  "AboutStoryBlock": {
+    "tagline": "Povestea noastră",
+    "headline": "Cum am crescut de la zero.",
+    "subheadline": "Orice inițiativă măreață începe cu dorința simplă de a lăsa lucrurile puțin mai bune decât le-ai găsit.",
+    "story": {
+      "seed": {
+        "title": "Sămânța unei idei.",
+        "content": "Totul a început cu trei prieteni, două lopeți și o porțiune de pământ neglijată din spatele bibliotecii. Ne-am dat seama că campusul nostru avea un potențial enorm pentru spații verzi, dar nu exista nicio cale centralizată prin care studenții să se poată implica practic."
+      },
+      "roots": {
+        "title": "Prinderea rădăcinilor.",
+        "content": "Ceea ce a început ca un hobby de weekend a crescut rapid. Până la sfârșitul primului semestru, peste cincizeci de studenți se alăturaseră listei noastre de e-mail. Nu mai plantam doar flori; clădeam o comunitate de oameni cărora le păsa de un stil de viață sustenabil."
+      },
+      "bloom": {
+        "title": "Înflorim împreună.",
+        "content": "Astăzi, suntem o organizație studențească recunoscută oficial, care colaborează cu consiliile locale ale orașului. De la ateliere de eco-educație până la acțiuni masive de plantare în weekend, demonstrăm că acțiunile mici creează un impact uriaș."
+      }
+    }
+  },
+
+  "LeadersBlock": {
+    "headline": "Faceți cunoștință cu rădăcinile comunității noastre.",
+    "subheadline": "Un grup de studenți ușor haotic și plin de cofeină, care pur și simplu adoră plantele și vrea să facă o schimbare.",
+    "role": {
+      "founder": "Fondator și Președinte",
+      "operations": "Șef Operațiuni",
+      "community": "Coordonator Comunitar"
+    },
+    "bio": {
+      "emma": "„Mamă” pentru peste 40 de suculente. De obicei, o găsești plină de pământ de flori sau bând matcha cu gheață.",
+      "gabor": "Tipul care știe cu adevărat cum să organizeze un tabel și să se asigure că lopețile ajung la timp.",
+      "david": "Mereu zâmbitor, mereu gata să-ți ofere o pereche de mănuși. El este sufletul acțiunilor noastre de weekend."
+    }
+  },
+
+  "ContactCTABlock": {
+    "headline": "Noi avem lopețile. Doar de tine mai avem nevoie.",
+    "subheadline": "Indiferent dacă te pricepi la grădinărit sau nu ai pus mâna pe pământ niciodată, aici există un loc pentru tine. Hai să creștem ceva împreună.",
+    "button": "Contactează-ne"
+  }
+}

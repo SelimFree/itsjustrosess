@@ -1,0 +1,49 @@
+{
+  "HeroBlock": {
+    "tagline": "Găsește-ți inspirația",
+    "title": "Adu o schimbare în campus.",
+    "subtitle": "Alătură-te rețelei noastre universitare de voluntari. Dezvoltă-ți abilitățile, cunoaște oameni minunați și ajută comunitatea într-un mod semnificativ.",
+    "cta": "Implică-te",
+    "imageAlt": "Studenți făcând voluntariat împreună",
+    "marquee": "VOLUNTARIAT • CONECTARE • DEZVOLTARE • VOLUNTARIAT • CONECTARE • DEZVOLTARE • VOLUNTARIAT • CONECTARE • DEZVOLTARE •"
+  },
+
+  "ImpactPillarsBlock": {
+    "sectionTitle": "Facem ca impactul să fie ușor.",
+    "sectionSubtitle": "Indiferent dacă ai experiență în grădinărit sau pur și simplu vrei să ajuți, există un loc unde să crești alături de noi.",
+    "planting": {
+      "title": "Plantări urbane",
+      "desc": "Înverzim campusul și spațiile urbane, câte un răsad pe rând. Vino la acțiunile noastre de weekend."
+    },
+    "education": {
+      "title": "Eco-Educație",
+      "desc": "Organizăm ateliere și discuții pentru a promova conștientizarea despre un stil de viață sustenabil și flora locală."
+    },
+    "community": {
+      "title": "Centru Comunitar",
+      "desc": "Conectăm studenții cu inițiativele ecologice locale. Clădim prietenii prin obiective comune."
+    }
+  },
+
+  "ImpactCounter": {
+    "title": "Semințe mici, impact imens.",
+    "subtitle": "Privește ce am realizat împreună în acest semestru. Fiecare pereche de mâini face diferența.",
+    "stats": {
+      "plants": "Copaci și răsaduri plantate",
+      "volunteers": "Studenți voluntari activi",
+      "hours": "Ore de voluntariat oferite"
+    }
+  },
+
+  "SocialSplitBlock": {
+    "social": {
+      "title": "Hai să fim prieteni.",
+      "subtitle": "Urmărește călătoria noastră, etichetează-ne în pozele tale cu plante și fii la curent cu noutățile din campus."
+    },
+    "join": {
+      "title": "Ești gata să te implici?",
+      "subtitle": "Căutăm mereu studenți pasionați care să se alăture echipei noastre. Accesează formularul de contact pentru a deveni membru oficial!",
+      "button": "Alătură-te clubului"
+    }
+  }
+}

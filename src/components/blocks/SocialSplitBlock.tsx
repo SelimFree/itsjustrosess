@@ -10,7 +10,7 @@ import { FadeIn } from "../utils/FadeIn";
 
 
 export function SocialSplitBlock() {
-    const { t } = useTranslation();
+    const { t } = useTranslation("home");
 
     return (
         <section className="relative w-full bg-gray-50 py-32 md:py-40 overflow-hidden z-30 -mt-1 md:-mt-2">
@@ -38,11 +38,11 @@ export function SocialSplitBlock() {
 
                         <div className="relative z-10 flex flex-col items-center h-full justify-center">
                             <Heading level={2} className="text-4xl md:text-5xl font-display text-gray-900 mb-4">
-                                {t("social.title", "Let's be friends.")}
+                                {t("SocialSplitBlock.social.title")}
                             </Heading>
 
                             <Text className="text-lg text-gray-600 mb-10 max-w-sm">
-                                {t("social.subtitle", "Follow our journey, tag us in your plant pics, and stay in the loop with daily campus updates.")}
+                                {t("SocialSplitBlock.social.subtitle")}
                             </Text>
 
                             <div className="flex gap-6">
@@ -73,16 +73,16 @@ export function SocialSplitBlock() {
 
                         <div className="relative z-10 flex flex-col h-full justify-center lg:items-start text-center lg:text-left">
                             <Heading level={2} className="text-4xl md:text-5xl font-display mb-4 text-white drop-shadow-sm">
-                                {t("join.title", "Ready to dig in?")}
+                                {t("SocialSplitBlock.join.title")}
                             </Heading>
 
                             <Text className="text-lg text-white/90 mb-10 max-w-md mx-auto lg:mx-0">
-                                {t("join.subtitle", "We are always looking for passionate students to join our crew. Head over to our contact form to officially become a member!")}
+                                {t("SocialSplitBlock.join.subtitle")}
                             </Text>
 
                             <Link to="/contact" className="outline-none group inline-block">
                                 <Button className="gap-3 px-8 py-6 rounded-full bg-white text-secondary-600 shadow-lg transition-all duration-300 hover:bg-gray-50 hover:scale-105 active:scale-95 text-lg font-bold">
-                                    {t("join.button", "Join the club")}
+                                    {t("SocialSplitBlock.join.button")}
                                     <ArrowRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-1" />
                                 </Button>
                             </Link>

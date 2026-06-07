@@ -12,40 +12,40 @@ import { FadeIn } from "../utils/FadeIn";
 const INQUIRY_OPTIONS = [
     {
         value: "event_participation",
-        labelKey: "contactBlock.form.departmentOptions.event_participation"
+        labelKey: "ContactFormBlock.form.departmentOptions.event_participation"
     },
     {
         value: "volunteer",
-        labelKey: "contactBlock.form.departmentOptions.volunteer"
+        labelKey: "ContactFormBlock.form.departmentOptions.volunteer"
     },
     {
         value: "partnership",
-        labelKey: "contactBlock.form.departmentOptions.partnership"
+        labelKey: "ContactFormBlock.form.departmentOptions.partnership"
     },
     {
         value: "media",
-        labelKey: "contactBlock.form.departmentOptions.media"
+        labelKey: "ContactFormBlock.form.departmentOptions.media"
     },
     {
         value: "other",
-        labelKey: "contactBlock.form.departmentOptions.other"
+        labelKey: "ContactFormBlock.form.departmentOptions.other"
     }
 ];
 
 const EVENT_OPTIONS = [
     {
         value: "event 1",
-        labelKey: "contactBlock.form.departmentOptions.event_participation"
+        labelKey: "ContactFormBlock.form.eventOptions.event1"
     },
     {
         value: "event 2",
-        labelKey: "contactBlock.form.departmentOptions.volunteer"
+        labelKey: "ContactFormBlock.form.eventOptions.event2"
     },
     {
         value: "event 3",
-        labelKey: "contactBlock.form.departmentOptions.partnership"
+        labelKey: "ContactFormBlock.form.eventOptions.event3"
     },
-]
+];
 
 export const ContactFormBlock = () => {
     const formRef = useRef<HTMLFormElement>(null);
@@ -89,7 +89,7 @@ export const ContactFormBlock = () => {
             formRef.current.reset();
         } catch (err) {
             console.error(err);
-            setError("contactBlock.errorMessage");
+            setError("ContactFormBlock.errorMessage");
         } finally {
             setIsSubmitting(false);
         }
@@ -106,15 +106,15 @@ export const ContactFormBlock = () => {
                     <FadeIn>
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-50 mb-6 text-primary-600 font-bold text-sm tracking-widest uppercase border border-primary-100 shadow-sm">
                             <HeartHandshake className="h-4 w-4" />
-                            {t("contactBlock.subtitle", "Let's Connect")}
+                            {t("ContactFormBlock.subtitle")}
                         </div>
 
                         <Heading level={2} className="text-4xl md:text-5xl font-display text-gray-900 tracking-tight mb-6">
-                            {t("contactBlock.title", "We'd love to hear from you.")}
+                            {t("ContactFormBlock.title")}
                         </Heading>
 
                         <Text className="text-gray-600 text-lg leading-relaxed mb-10">
-                            {t("contactBlock.description", "Whether you want to volunteer, partner on a campus initiative, or just say hello, drop us a line below and our team will get back to you soon.")}
+                            {t("ContactFormBlock.description")}
                         </Text>
 
                         <div className="flex items-start gap-4 p-6 bg-white rounded-3xl border border-gray-100 shadow-sm mb-10">
@@ -123,20 +123,20 @@ export const ContactFormBlock = () => {
                             </div>
                             <div>
                                 <Text className="font-display font-semibold text-gray-900 text-lg mb-1">
-                                    {t("contactBlock.securityTitle", "Your data is safe")}
+                                    {t("ContactFormBlock.securityTitle")}
                                 </Text>
                                 <Text className="text-sm text-gray-500 leading-relaxed">
-                                    {t("contactBlock.securityDescription", "We only use your information to respond to your inquiry. We never share your data with third parties.")}
+                                    {t("ContactFormBlock.securityDescription")}
                                 </Text>
                             </div>
                         </div>
 
                         <div className="pt-8 border-t border-gray-200">
                             <Text className="text-xs font-bold tracking-widest text-gray-400 uppercase mb-4">
-                                {t("contactBlock.directContactTitle", "Or reach us directly")}
+                                {t("ContactFormBlock.directContactTitle")}
                             </Text>
                             <a
-                                href={`mailto:${t("contactBlock.emailAddress", "hello@itsjustroses.org")}`}
+                                href={`mailto:${t("ContactFormBlock.emailAddress")}`}
                                 className="group flex items-center gap-4 text-gray-900 hover:text-primary-600 transition-colors"
                             >
                                 <div className="flex items-center justify-center h-14 w-14 rounded-full bg-white shadow-sm border border-gray-100 group-hover:scale-110 group-hover:border-primary-200 group-hover:shadow-md transition-all duration-300">
@@ -144,10 +144,10 @@ export const ContactFormBlock = () => {
                                 </div>
                                 <div className="flex flex-col">
                                     <span className="text-lg font-display font-semibold">
-                                        {t("contactBlock.emailAddress", "hello@itsjustroses.org")}
+                                        {t("ContactFormBlock.emailAddress")}
                                     </span>
                                     <span className="text-sm text-gray-500">
-                                        {t("contactBlock.directContactLabel", "We usually reply within 24 hours")}
+                                        {t("ContactFormBlock.directContactLabel")}
                                     </span>
                                 </div>
                             </a>
@@ -165,36 +165,36 @@ export const ContactFormBlock = () => {
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div className="space-y-2">
                                             <Label htmlFor="firstName" className="text-sm font-semibold text-gray-700">
-                                                {t("contactBlock.form.firstNameLabel", "First Name")}
+                                                {t("ContactFormBlock.form.firstNameLabel")}
                                             </Label>
-                                            <Input id="firstName" name="firstName" placeholder={t("contactBlock.form.firstNamePlaceholder", "Jane")} required className="rounded-2xl bg-gray-50 border-transparent focus:bg-white focus:border-primary-500 focus:ring-2 focus:ring-primary-500 transition-all px-4 py-3" />
+                                            <Input id="firstName" name="firstName" maxLength={128} placeholder={t("ContactFormBlock.form.firstNamePlaceholder")} required className="rounded-2xl bg-gray-50 border-transparent focus:bg-white focus:border-primary-500 focus:ring-2 focus:ring-primary-500 transition-all px-4 py-3" />
                                         </div>
                                         <div className="space-y-2">
                                             <Label htmlFor="lastName" className="text-sm font-semibold text-gray-700">
-                                                {t("contactBlock.form.lastNameLabel", "Last Name")}
+                                                {t("ContactFormBlock.form.lastNameLabel")}
                                             </Label>
-                                            <Input id="lastName" name="lastName" placeholder={t("contactBlock.form.lastNamePlaceholder", "Doe")} required className="rounded-2xl bg-gray-50 border-transparent focus:bg-white focus:border-primary-500 focus:ring-2 focus:ring-primary-500 transition-all px-4 py-3" />
+                                            <Input id="lastName" name="lastName" maxLength={128} placeholder={t("ContactFormBlock.form.lastNamePlaceholder")} required className="rounded-2xl bg-gray-50 border-transparent focus:bg-white focus:border-primary-500 focus:ring-2 focus:ring-primary-500 transition-all px-4 py-3" />
                                         </div>
                                     </div>
 
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         <div className="space-y-2">
                                             <Label htmlFor="company" className="text-sm font-semibold text-gray-700">
-                                                {t("contactBlock.form.companyLabel", "Organization / University")}
+                                                {t("ContactFormBlock.form.companyLabel")}
                                             </Label>
-                                            <Input id="company" name="company" placeholder={t("contactBlock.form.companyPlaceholder", "e.g. State University")} className="rounded-2xl bg-gray-50 border-transparent focus:bg-white focus:border-primary-500 focus:ring-2 focus:ring-primary-500 transition-all px-4 py-3" />
+                                            <Input id="company" name="company" maxLength={128} placeholder={t("ContactFormBlock.form.companyPlaceholder")} className="rounded-2xl bg-gray-50 border-transparent focus:bg-white focus:border-primary-500 focus:ring-2 focus:ring-primary-500 transition-all px-4 py-3" />
                                         </div>
                                         <div className="space-y-2">
                                             <Label htmlFor="email" className="text-sm font-semibold text-gray-700">
-                                                {t("contactBlock.form.emailLabel", "Email Address")}
+                                                {t("ContactFormBlock.form.emailLabel")}
                                             </Label>
-                                            <Input id="email" name="email" type="email" placeholder={t("contactBlock.form.emailPlaceholder", "jane@example.com")} required className="rounded-2xl bg-gray-50 border-transparent focus:bg-white focus:border-primary-500 focus:ring-2 focus:ring-primary-500 transition-all px-4 py-3" />
+                                            <Input id="email" name="email" type="email" maxLength={128} placeholder={t("ContactFormBlock.form.emailPlaceholder")} required className="rounded-2xl bg-gray-50 border-transparent focus:bg-white focus:border-primary-500 focus:ring-2 focus:ring-primary-500 transition-all px-4 py-3" />
                                         </div>
                                     </div>
 
                                     <div className="space-y-2">
                                         <Label htmlFor="department" className="text-sm font-semibold text-gray-700">
-                                            {t("contactBlock.form.departmentLabel", "What is this regarding?")}
+                                            {t("ContactFormBlock.form.departmentLabel")}
                                         </Label>
                                         <div className="relative">
                                             <select
@@ -203,10 +203,11 @@ export const ContactFormBlock = () => {
                                                 className="w-full rounded-2xl bg-gray-50 border-transparent focus:bg-white focus:border-primary-500 focus:ring-2 focus:ring-primary-500 transition-all px-4 py-3 text-gray-700 appearance-none cursor-pointer"
                                                 required
                                                 defaultValue=""
-                                                onChange={(e) => setEventSelected(e.target.value === "event_participation")}                                            >
-                                                <option value="" disabled>{t("contactBlock.form.departmentOptions.default", "Select an option...")}</option>
+                                                onChange={(e) => setEventSelected(e.target.value === "event_participation")}
+                                            >
+                                                <option value="" disabled>{t("ContactFormBlock.form.departmentOptions.default")}</option>
                                                 {INQUIRY_OPTIONS.map((o) => (
-                                                    <option value={o.value}>{t(o.labelKey, o.value)}</option>
+                                                    <option key={o.value} value={o.value}>{t(o.labelKey)}</option>
                                                 ))}
                                             </select>
                                             <div className="absolute inset-y-0 right-4 flex items-center pointer-events-none text-gray-500">
@@ -216,9 +217,9 @@ export const ContactFormBlock = () => {
                                     </div>
 
                                     {eventSelected &&
-                                        <div className="space-y-2">
+                                        <div className="space-y-2 animate-in fade-in slide-in-from-top-2">
                                             <Label htmlFor="event" className="text-sm font-semibold text-gray-700">
-                                                {t("contactBlock.form.eventLabel", "What event you want to participate?")}
+                                                {t("ContactFormBlock.form.eventLabel")}
                                             </Label>
                                             <div className="relative">
                                                 <select
@@ -228,9 +229,9 @@ export const ContactFormBlock = () => {
                                                     required
                                                     defaultValue=""
                                                 >
-                                                    <option value="" disabled>{t("contactBlock.form.eventOptions.default", "Select an event...")}</option>
+                                                    <option value="" disabled>{t("ContactFormBlock.form.eventOptions.default")}</option>
                                                     {EVENT_OPTIONS.map((e) => (
-                                                        <option value={e.value}>{t(e.labelKey, e.value)}</option>
+                                                        <option key={e.value} value={e.value}>{t(e.labelKey)}</option>
                                                     ))}
                                                 </select>
                                                 <div className="absolute inset-y-0 right-4 flex items-center pointer-events-none text-gray-500">
@@ -242,13 +243,14 @@ export const ContactFormBlock = () => {
 
                                     <div className="space-y-2">
                                         <Label htmlFor="message" className="text-sm font-semibold text-gray-700">
-                                            {t("contactBlock.form.messageLabel", "Your Message")}
+                                            {t("ContactFormBlock.form.messageLabel")}
                                         </Label>
                                         <Textarea
                                             id="message"
                                             name="message"
-                                            placeholder={t("contactBlock.form.messagePlaceholder", "How can we help you today?")}
+                                            placeholder={t("ContactFormBlock.form.messagePlaceholder")}
                                             rows={5}
+                                            maxLength={512}
                                             required
                                             className="rounded-2xl bg-gray-50 border-transparent focus:bg-white focus:border-primary-500 focus:ring-2 focus:ring-primary-500 transition-all px-4 py-3 resize-none custom-scrollbar"
                                         />
@@ -259,7 +261,7 @@ export const ContactFormBlock = () => {
                                             <AlertCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
                                             <div className="flex-1 pr-6">
                                                 <Text className="text-sm font-semibold text-red-900 mb-0.5">
-                                                    {t("contactBlock.errorTitle", "Something went wrong")}
+                                                    {t("ContactFormBlock.errorTitle")}
                                                 </Text>
                                                 <Text className="text-sm text-red-700">
                                                     {t(error)}
@@ -284,11 +286,11 @@ export const ContactFormBlock = () => {
                                             {isSubmitting ? (
                                                 <>
                                                     <Loader2 className="h-5 w-5 animate-spin mr-2" />
-                                                    {t("contactBlock.buttonSending", "Sending...")}
+                                                    {t("ContactFormBlock.buttonSending")}
                                                 </>
                                             ) : (
                                                 <>
-                                                    {t("contactBlock.buttonSubmit", "Send Message")}
+                                                    {t("ContactFormBlock.buttonSubmit")}
                                                     <Send className="h-4 w-4 ml-2" />
                                                 </>
                                             )}
@@ -304,11 +306,11 @@ export const ContactFormBlock = () => {
                                     </div>
 
                                     <Heading level={3} className="text-3xl font-display text-gray-900 mb-4">
-                                        {t("contactBlock.successTitle", "Message Received!")}
+                                        {t("ContactFormBlock.successTitle")}
                                     </Heading>
 
                                     <Text className="text-gray-600 text-lg leading-relaxed max-w-sm mx-auto mb-10">
-                                        {t("contactBlock.successMessage", "Thanks for reaching out. Your message has been planted in our inbox, and we'll get back to you as soon as it sprouts.")}
+                                        {t("ContactFormBlock.successMessage")}
                                     </Text>
 
                                     <Button
@@ -316,7 +318,7 @@ export const ContactFormBlock = () => {
                                         onClick={() => setIsSubmitted(false)}
                                         className="rounded-full border-gray-200 text-gray-600 hover:text-gray-900 hover:bg-white shadow-sm"
                                     >
-                                        {t("contactBlock.successButton", "Send another message")}
+                                        {t("ContactFormBlock.successButton")}
                                     </Button>
                                 </div>
                             )}

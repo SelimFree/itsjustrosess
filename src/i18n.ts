@@ -9,8 +9,8 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: "en",
-    supportedLngs: ["en"],
-    ns: ["common", "legal"],
+    supportedLngs: ["en", "ro"],
+    ns: ["common", "legal", "home", "about", "events", "contact"],
     defaultNS: "common",
 
     load: 'languageOnly',

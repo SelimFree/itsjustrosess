@@ -1,0 +1,42 @@
+{
+  "AboutStoryBlock": {
+    "tagline": "Our Story",
+    "headline": "How we grew from the ground up.",
+    "subheadline": "Every great initiative starts with a simple desire to leave things a little better than you found them.",
+    "story": {
+      "seed": {
+        "title": "The seed of an idea.",
+        "content": "It started with three friends, two shovels, and a neglected patch of dirt behind the library. We realized that our campus had so much potential for green spaces, but no centralized way for students to get their hands dirty and help out."
+      },
+      "roots": {
+        "title": "Taking root.",
+        "content": "What began as a weekend hobby quickly grew. By the end of our first semester, over fifty students had joined our mailing list. We weren't just planting flowers anymore; we were building a community of people who cared about sustainable living."
+      },
+      "bloom": {
+        "title": "Blooming together.",
+        "content": "Today, we are an officially recognized student organization partnering with local city councils. From eco-education workshops to massive weekend planting drives, we are proving that small actions create massive ripples."
+      }
+    }
+  },
+
+  "LeadersBlock": {
+    "headline": "Meet the roots of our community.",
+    "subheadline": "A slightly chaotic, heavily caffeinated group of students who just really love plants and making a difference.",
+    "role": {
+      "founder": "Founder & President",
+      "operations": "Head of Operations",
+      "community": "Community Lead"
+    },
+    "bio": {
+      "emma": "Plant mom to 40+ succulents. Usually found covered in potting soil or drinking iced matcha.",
+      "gabor": "The guy who actually knows how to organize a spreadsheet and make sure the shovels show up on time.",
+      "david": "Always smiling, always ready to hand you a pair of gloves. He is the heartbeat of our weekend digs."
+    }
+  },
+
+  "ContactCTABlock": {
+    "headline": "We have the shovels. We just need you.",
+    "subheadline": "Whether you have a green thumb or have never touched soil in your life, there is a place for you here. Let's grow something together.",
+    "button": "Get in touch"
+  }
+}

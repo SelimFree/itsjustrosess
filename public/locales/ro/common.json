@@ -1,0 +1,51 @@
+{
+  "navbar": {
+    "home": "Acasă",
+    "about": "Despre noi",
+    "events": "Evenimente",
+    "contact": "Contact",
+    "privacy": "Politica de confidențialitate",
+    "terms": "Termeni și condiții",
+    "cookie": "Politica privind modulele cookie"
+  },
+
+  "footer": {
+    "quickLinks": "Link-uri rapide",
+    "legal": "Legal",
+    "privacy": "Politica de confidențialitate",
+    "terms": "Termeni și condiții",
+    "cookie": "Politica privind modulele cookie",
+    "slogan": "Totul începe cu o simplă lopată, o viziune împărtășită și pasiunea unui student. Transformăm gesturile mici, dar pline de intenție, în valuri uriașe de bine care transformă campusul nostru într-o casă mai verde.",
+    "rights": "© {{year}} {{company}}. Toate drepturile rezervate."
+  },
+
+  "cookieBanner": {
+    "title": "Politica privind modulele cookie",
+    "body": "Folosim module cookie pentru a analiza traficul și a optimiza experiența dumneavoastră. Făcând clic pe „Acceptă”, sunteți de acord cu utilizarea modulelor cookie.",
+    "accept": "Acceptă",
+    "more": "Află mai multe"
+  },
+
+  "finalCtaBlock": {
+    "title": "Ești gata să-ți îmbunătățești operațiunile?",
+    "subtitle": "Contactează-ne astăzi pentru a descoperi cum soluțiile noastre de instrumentare a proceselor și de laborator pot contribui la succesul tău.",
+    "reachBtn": "Contactează-ne"
+  },
+
+  "notFoundPage": {
+    "title": "404",
+    "subtitle": "Pagina nu a fost găsită",
+    "body": "Ne pare rău, nu am putut găsi pagina pe care o cauți. Este posibil să fi fost mutată sau ștearsă.",
+    "returnBtn": "Înapoi la acasă"
+  },
+
+  "errorPage": {
+    "title": "Ceva nu a funcționat corect",
+    "subtitle": "Am întâmpinat o eroare neașteptată. Te rugăm să încerci să reîncarci pagina sau să contactezi suportul tehnic dacă problema persistă.",
+    "refreshBtn": "Reîncarcă pagina"
+  },
+
+  "loading": {
+    "message": "Se încarcă..."
+  }
+}

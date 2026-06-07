@@ -1,0 +1,47 @@
+{
+  "ContactFormBlock": {
+    "subtitle": "Let's Connect",
+    "title": "We'd love to hear from you.",
+    "description": "Whether you want to volunteer, partner on a campus initiative, or just say hello, drop us a line below and our team will get back to you soon.",
+    "securityTitle": "Your data is safe",
+    "securityDescription": "We only use your information to respond to your inquiry. We never share your data with third parties.",
+    "directContactTitle": "Or reach us directly",
+    "emailAddress": "hello@itsjustroses.org",
+    "directContactLabel": "We usually reply within 24 hours",
+    "errorMessage": "Unable to send your message right now. Please try again later.",
+    "errorTitle": "Something went wrong",
+    "buttonSending": "Sending...",
+    "buttonSubmit": "Send Message",
+    "successTitle": "Message Received!",
+    "successMessage": "Thanks for reaching out. Your message has been planted in our inbox, and we'll get back to you as soon as it sprouts.",
+    "successButton": "Send another message",
+    "form": {
+      "firstNameLabel": "First Name",
+      "firstNamePlaceholder": "Rose",
+      "lastNameLabel": "Last Name",
+      "lastNamePlaceholder": "White",
+      "companyLabel": "Organization / University",
+      "companyPlaceholder": "e.g. UPJ",
+      "emailLabel": "Email Address",
+      "emailPlaceholder": "rose@example.com",
+      "departmentLabel": "What is this regarding?",
+      "departmentOptions": {
+        "default": "Select an option...",
+        "event_participation": "Event Participation",
+        "volunteer": "Volunteering",
+        "partnership": "Campus Partnership",
+        "media": "Media / Press",
+        "other": "Other"
+      },
+      "eventLabel": "Which event do you want to participate in?",
+      "eventOptions": {
+        "default": "Select an event...",
+        "event1": "Spring Campus Cleanup",
+        "event2": "Urban Farming Workshop",
+        "event3": "Earth Day Festival"
+      },
+      "messageLabel": "Your Message",
+      "messagePlaceholder": "How can we help you today?"
+    }
+  }
+}

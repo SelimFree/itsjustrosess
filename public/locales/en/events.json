@@ -1,0 +1,116 @@
+{
+  "FutureEventsBlock": {
+    "tagline": "Get Involved",
+    "headline": "Upcoming Events",
+    "subheadline": "Mark your calendars. Here is what we have growing on campus this semester.",
+    "buttons": {
+      "register": "Register",
+      "registerForEvent": "Register for Event"
+    },
+    "modal": {
+      "footerText": "Ready to make an impact? Secure your spot now."
+    },
+    "events": {
+      "evt1": {
+        "title": "Spring Campus Cleanup",
+        "date": "24 Mar",
+        "time": "09:00-14:00",
+        "location": "Main Quad",
+        "shortDesc": "Grab a shovel and join us for our biggest planting drive of the semester. Breakfast provided!",
+        "fullDesc": [
+          "We're partnering with the university groundskeeping team to plant over 200 native shrubs around the library. This is our biggest initiative of the semester, and we need all hands on deck to make it happen.",
+          "Gloves, tools, and a bagel breakfast will be provided for all volunteers. Please wear closed-toe shoes, thick socks, and clothes you don't mind getting dirty. Sunscreen and hats are highly recommended!",
+          "We will meet at the main fountain at 8:45 AM for a quick safety briefing before splitting into four specialized teams. If you arrive late, please check in at the registration tent near the library entrance to be assigned a zone."
+        ]
+      },
+      "evt2": {
+        "title": "Urban Farming Workshop",
+        "date": "02 Apr",
+        "time": "16:00-18:00",
+        "location": "Room 302",
+        "shortDesc": "Learn how to grow your own herbs and vegetables right in your dorm room or apartment.",
+        "fullDesc": [
+          "No balcony? No problem! Guest speaker Dr. Aris Thorne from the Agriculture department will teach the basics of hydroponics and windowsill gardening.",
+          "We will cover soil composition, lighting requirements for indoor plants, and how to troubleshoot common indoor pests without harsh chemicals.",
+          "Every attendee will leave with a starter kit including basil and mint seeds, a small terracotta pot, and specialized indoor potting soil. Space is strictly limited to 40 students due to room capacity, so please register early!"
+        ]
+      },
+      "evt3": {
+        "title": "Earth Day Festival",
+        "date": "22 Apr",
+        "time": "11:00-17:00",
+        "location": "Amphitheater",
+        "shortDesc": "Live music, vegan food trucks, and eco-friendly vendor booths. Our biggest party of the year.",
+        "fullDesc": [
+          "Celebrate Earth Day with the whole campus! We are hosting a massive festival featuring local indie bands, sustainable thrift pop-ups, and three of the city's best vegan food trucks.",
+          "The festival runs all day, so you can drop by between classes. We will also be hosting mini-workshops on the hour, every hour, covering topics from composting to fast-fashion alternatives.",
+          "Stop by our main booth to learn about upcoming summer initiatives, sign up for the executive board, or pick up some exclusive 100% recycled cotton merch. Entry to the festival is completely free!"
+        ]
+      }
+    }
+  },
+  "PastEventsBlock": {
+    "tagline": "Our Impact",
+    "headline": "Look what we grew.",
+    "subheadline": "Read through some of our favorite memories, community projects, and massive weekend digs from past semesters.",
+    "buttonRecap": "Read Full Recap",
+    "galleryHeading": "Event Gallery",
+    "galleryImageAlt": "Gallery image {{count}}",
+    "events": {
+      "past1": {
+        "title": "Winter Greenhouse Restoration",
+        "date": "MAR 2026",
+        "shortDesc": "We spent the weekend replacing broken glass and setting up new irrigation systems in the historic campus greenhouse.",
+        "stats": {
+          "volunteers": "Volunteers",
+          "plantsSaved": "Plants Saved"
+        },
+        "paragraphs": [
+          "The historic botany greenhouse had been neglected for over a decade. When the university announced plans to tear it down, our community rallied together to prove it could still be a vital educational space.",
+          "Over two freezing days in December, 45 students worked in shifts. We replaced 30 cracked panes of glass, scrubbed years of algae off the frames, and installed a brand new smart-drip irrigation system donated by the engineering department.",
+          "Today, the greenhouse is fully operational and is being used by three different biology classes for their spring research projects!"
+        ]
+      },
+      "past2": {
+        "title": "City Park Tree Planting",
+        "date": "DEC 2025",
+        "shortDesc": "Partnering with the city council to plant native saplings along the newly constructed riverwalk.",
+        "stats": {
+          "volunteers": "Volunteers",
+          "saplingsPlanted": "Saplings Planted"
+        },
+        "paragraphs": [
+          "When the city opened the new riverwalk, we noticed a severe lack of shade. We pitched a proposal to the city council to let us handle the landscaping using exclusively native, drought-resistant tree species.",
+          "The turnout was unbelievable. Over 80 students showed up at 7:00 AM on a Saturday. We split into teams of three: diggers, planters, and waterers.",
+          "By noon, we had successfully planted 200 Oak and Birch saplings. In a few years, this entire walkway will be a beautiful, shaded canopy for the community to enjoy."
+        ]
+      },
+      "past3": {
+        "title": "Autumn Composting Drive",
+        "date": "OCT 2025",
+        "shortDesc": "Collecting dorm food waste and turning it into nutrient-rich soil for the community gardens.",
+        "stats": {
+          "volunteers": "Volunteers",
+          "wasteDiverted": "Waste Diverted"
+        },
+        "paragraphs": [
+          "Food waste is one of the biggest issues in university dorms. We set up collection bins in three major freshman dorms and challenged them to save their organic waste for two weeks.",
+          "The results were staggering. We collected over 500 pounds of fruit peels, coffee grounds, and vegetable scraps. We spent the weekend mixing it into our campus compost tumblers.",
+          "That compost has since matured and was used to fertilize the spring vegetable gardens, creating a perfect closed-loop system right here on campus."
+        ]
+      }
+    }
+  },
+
+  "PartnersBlock": {
+    "headline": "Supported by our amazing local partners",
+    "partners": {
+      "google": "Google Logo",
+      "ibm": "IBM Logo",
+      "microsoft": "Microsoft Logo",
+      "amazon": "Amazon Logo",
+      "cisco": "Cisco Logo",
+      "tesla": "Tesla Logo"
+    }
+  }
+}

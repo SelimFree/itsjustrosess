@@ -8,9 +8,51 @@ import { useTranslation } from "react-i18next";
 import { FadeIn } from "../utils/FadeIn";
 import { cn } from "../../lib/utils";
 
+const upcomingEvents = [
+  {
+    id: "evt-1",
+    title: "FutureEventsBlock.events.evt1.title",
+    date: "FutureEventsBlock.events.evt1.date",
+    time: "FutureEventsBlock.events.evt1.time",
+    location: "FutureEventsBlock.events.evt1.location",
+    image: "https://images.unsplash.com/photo-1618477461853-cf6ed80fbea5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    shortDesc: "FutureEventsBlock.events.evt1.shortDesc",
+    fullDesc: "FutureEventsBlock.events.evt1.fullDesc",
+    formLink: "/register/spring-cleanup",
+    blobColor: "bg-primary-100",
+    textColor: "text-primary-600"
+  },
+  {
+    id: "evt-2",
+    title: "FutureEventsBlock.events.evt2.title",
+    date: "FutureEventsBlock.events.evt2.date",
+    time: "FutureEventsBlock.events.evt2.time",
+    location: "FutureEventsBlock.events.evt2.location",
+    image: "https://images.unsplash.com/photo-1530836369250-ef71a359c717?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    shortDesc: "FutureEventsBlock.events.evt2.shortDesc",
+    fullDesc: "FutureEventsBlock.events.evt2.fullDesc",
+    formLink: "/register/urban-farming",
+    blobColor: "bg-secondary-100",
+    textColor: "text-secondary-600"
+  },
+  {
+    id: "evt-3",
+    title: "FutureEventsBlock.events.evt3.title",
+    date: "FutureEventsBlock.events.evt3.date",
+    time: "FutureEventsBlock.events.evt3.time",
+    location: "FutureEventsBlock.events.evt3.location",
+    image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+    shortDesc: "FutureEventsBlock.events.evt3.shortDesc",
+    fullDesc: "FutureEventsBlock.events.evt3.fullDesc",
+    formLink: "/register/earth-day",
+    blobColor: "bg-accent-100",
+    textColor: "text-accent-600"
+  }
+];
+
 export function FutureEventsBlock() {
-  const { t } = useTranslation();
-  
+  const { t } = useTranslation("events");
+
   const [openDetailsId, setOpenDetailsId] = useState<string | null>(null);
   const [isClosing, setIsClosing] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
@@ -48,81 +90,27 @@ export function FutureEventsBlock() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [openDetailsId, isClosing, handleCloseModal]);
 
-  const upcomingEvents = [
-    {
-      id: "evt-1",
-      title: t("events.upcoming.1.title", "Spring Campus Cleanup"),
-      date: "MAR 24",
-      time: "09:00 AM - 02:00 PM",
-      location: "Main Quad & Library Gardens",
-      image: "https://images.unsplash.com/photo-1618477461853-cf6ed80fbea5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      shortDesc: "Grab a shovel and join us for our biggest planting drive of the semester. Breakfast provided!",
-      fullDesc: [
-        "We're partnering with the university groundskeeping team to plant over 200 native shrubs around the library. This is our biggest initiative of the semester, and we need all hands on deck to make it happen.",
-        "Gloves, tools, and a bagel breakfast will be provided for all volunteers. Please wear closed-toe shoes, thick socks, and clothes you don't mind getting dirty. Sunscreen and hats are highly recommended!",
-        "We will meet at the main fountain at 8:45 AM for a quick safety briefing before splitting into four specialized teams. If you arrive late, please check in at the registration tent near the library entrance to be assigned a zone."
-      ],
-      formLink: "/register/spring-cleanup",
-      blobColor: "bg-primary-100",
-      textColor: "text-primary-600"
-    },
-    {
-      id: "evt-2",
-      title: t("events.upcoming.2.title", "Urban Farming Workshop"),
-      date: "APR 02",
-      time: "04:00 PM - 06:00 PM",
-      location: "Student Union, Room 302",
-      image: "https://images.unsplash.com/photo-1530836369250-ef71a359c717?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      shortDesc: "Learn how to grow your own herbs and vegetables right in your dorm room or apartment.",
-      fullDesc: [
-        "No balcony? No problem! Guest speaker Dr. Aris Thorne from the Agriculture department will teach the basics of hydroponics and windowsill gardening.",
-        "We will cover soil composition, lighting requirements for indoor plants, and how to troubleshoot common indoor pests without harsh chemicals.",
-        "Every attendee will leave with a starter kit including basil and mint seeds, a small terracotta pot, and specialized indoor potting soil. Space is strictly limited to 40 students due to room capacity, so please register early!"
-      ],
-      formLink: "/register/urban-farming",
-      blobColor: "bg-secondary-100",
-      textColor: "text-secondary-600"
-    },
-    {
-      id: "evt-3",
-      title: t("events.upcoming.3.title", "Earth Day Festival"),
-      date: "APR 22",
-      time: "11:00 AM - 05:00 PM",
-      location: "University Amphitheater",
-      image: "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      shortDesc: "Live music, vegan food trucks, and eco-friendly vendor booths. Our biggest party of the year.",
-      fullDesc: [
-        "Celebrate Earth Day with the whole campus! We are hosting a massive festival featuring local indie bands, sustainable thrift pop-ups, and three of the city's best vegan food trucks.",
-        "The festival runs all day, so you can drop by between classes. We will also be hosting mini-workshops on the hour, every hour, covering topics from composting to fast-fashion alternatives.",
-        "Stop by our main booth to learn about upcoming summer initiatives, sign up for the executive board, or pick up some exclusive 100% recycled cotton merch. Entry to the festival is completely free!"
-      ],
-      formLink: "/register/earth-day",
-      blobColor: "bg-accent-100",
-      textColor: "text-accent-600"
-    }
-  ];
-
   const activeEvent = upcomingEvents.find(e => e.id === openDetailsId);
 
   return (
     <>
       <section className="relative w-full bg-white py-40 md:py-48 overflow-hidden">
-        
+
         <div className="absolute top-0 right-0 w-96 h-96 bg-gray-50 rounded-full blur-3xl opacity-50 -translate-y-1/2 translate-x-1/2 pointer-events-none" />
 
         <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
-          
+
           <FadeIn className="mb-16 md:mb-20">
             <div className="max-w-2xl">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-50 mb-6 text-primary-600 font-bold text-sm tracking-widest uppercase border border-primary-100">
                 <Calendar className="h-4 w-4" />
-                {t("events.upcoming.tagline", "Get Involved")}
+                {t("FutureEventsBlock.tagline")}
               </div>
               <Heading level={2} className="text-4xl md:text-5xl font-display tracking-wide text-gray-900 mb-4">
-                {t("events.upcoming.headline", "Upcoming Events")}
+                {t("FutureEventsBlock.headline")}
               </Heading>
               <Text className="text-lg text-gray-600">
-                {t("events.upcoming.subheadline", "Mark your calendars. Here is what we have growing on campus this semester.")}
+                {t("FutureEventsBlock.subheadline")}
               </Text>
             </div>
           </FadeIn>
@@ -130,59 +118,59 @@ export function FutureEventsBlock() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {upcomingEvents.map((event, index) => {
               return (
-                <FadeIn 
-                  key={event.id} 
+                <FadeIn
+                  key={event.id}
                   delay={index * 150}
-                  direction="up" 
+                  direction="up"
                   className="h-full flex"
                 >
                   <div className="relative w-full flex flex-col rounded-[40px] bg-white border border-gray-100 shadow-xl overflow-hidden group">
-                    
+
                     <div className="relative h-64 overflow-hidden bg-gray-100 shrink-0">
-                      <Image 
-                        src={event.image} 
+                      <Image
+                        src={event.image}
                         alt={event.title}
                         className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-110"
                       />
-                      
+
                       <div className={cn(
                         "absolute top-4 right-4 flex flex-col items-center justify-center w-16 h-16 rounded-[40%_60%_70%_30%/40%_50%_60%_50%] shadow-lg backdrop-blur-md bg-white/90 font-display transition-transform group-hover:rotate-12 group-hover:scale-110",
                         event.textColor
                       )}>
-                        <span className="text-xs font-bold uppercase tracking-wider opacity-70 -mb-1">{event.date.split(" ")[0]}</span>
-                        <span className="text-2xl font-bold">{event.date.split(" ")[1]}</span>
+                        <span className="text-xs font-bold uppercase tracking-wider opacity-70 -mb-1">{t(event.date).split(" ")[1]}</span>
+                        <span className="text-2xl font-bold">{t(event.date).split(" ")[0]}</span>
                       </div>
                     </div>
 
                     <div className="flex flex-col flex-1 p-8">
                       <Heading level={3} className="text-2xl font-display text-gray-900 mb-2 group-hover:text-primary-600 transition-colors">
-                        {event.title}
+                        {t(event.title)}
                       </Heading>
-                      
+
                       <div className="flex flex-col gap-2 mb-6">
                         <div className="flex items-center gap-2 text-gray-500 text-sm font-medium">
                           <Calendar className="w-4 h-4" />
-                          {event.time}
+                          {t(event.time)}
                         </div>
                         <div className="flex items-center gap-2 text-gray-500 text-sm font-medium">
                           <MapPin className="w-4 h-4" />
-                          {event.location}
+                          {t(event.location)}
                         </div>
                       </div>
 
                       <Text className="text-gray-600 mb-8 flex-1">
-                        {event.shortDesc}
+                        {t(event.shortDesc)}
                       </Text>
 
                       <div className="flex gap-3 mt-auto pt-4 border-t border-gray-50">
-                        <Button 
+                        <Button
                           onClick={() => window.location.href = event.formLink}
                           className="flex-1 rounded-full bg-gray-900 text-white group-hover:bg-primary-500 shadow-md hover:shadow-xl hover:-translate-y-1 active:scale-95 transition-all duration-300"
                         >
-                          Register <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+                          {t("FutureEventsBlock.buttons.register")} <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                         </Button>
-                        
-                        <Button 
+
+                        <Button
                           variant="outline"
                           onClick={() => setOpenDetailsId(event.id)}
                           className="rounded-full px-5 border-gray-200 text-gray-600 hover:text-gray-900 hover:bg-gray-50 hover:scale-105 active:scale-95 transition-all duration-300 shadow-sm"
@@ -202,14 +190,14 @@ export function FutureEventsBlock() {
       </section>
 
       {openDetailsId && activeEvent && (
-        <div 
+        <div
           className={cn(
             "fixed inset-0 z-100 flex items-center justify-center p-4 sm:p-6 bg-gray-900/60 backdrop-blur-sm transition-opacity duration-300",
             isMounted && !isClosing ? "opacity-100" : "opacity-0"
           )}
           onClick={handleCloseModal}
         >
-          <div 
+          <div
             className={cn(
               "relative w-full max-w-3xl bg-white rounded-[40px] shadow-2xl h-[90vh] max-h-200 flex flex-col overflow-hidden transition-all duration-300",
               isMounted && !isClosing ? "scale-100 opacity-100 translate-y-0" : "scale-95 opacity-0 translate-y-8"
@@ -217,14 +205,14 @@ export function FutureEventsBlock() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative h-48 sm:h-64 shrink-0">
-              <Image 
-                src={activeEvent.image} 
+              <Image
+                src={activeEvent.image}
                 alt={activeEvent.title}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-linear-to-t from-gray-900/80 via-gray-900/20 to-transparent" />
-              
-              <button 
+
+              <button
                 onClick={handleCloseModal}
                 className="absolute top-6 right-6 p-3 bg-white/20 hover:bg-white/40 hover:scale-110 active:scale-95 backdrop-blur-md text-white rounded-full transition-all duration-300 z-10"
                 aria-label="Close modal"
@@ -238,15 +226,15 @@ export function FutureEventsBlock() {
                   activeEvent.blobColor,
                   activeEvent.textColor
                 )}>
-                  {activeEvent.date}
+                  {t(activeEvent.date)}
                 </div>
                 <Heading level={2} className="text-3xl sm:text-4xl font-display text-white drop-shadow-md">
-                  {activeEvent.title}
+                  {t(activeEvent.title)}
                 </Heading>
               </div>
             </div>
 
-            <div 
+            <div
               className="flex-1 overflow-y-auto px-6 sm:px-10 py-10 custom-scrollbar"
               style={{
                 maskImage: 'linear-gradient(to bottom, transparent, black 2rem, black calc(100% - 2rem), transparent)',
@@ -258,18 +246,18 @@ export function FutureEventsBlock() {
                   <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400">
                     <Calendar className="w-5 h-5" />
                   </div>
-                  {activeEvent.time}
+                  {t(activeEvent.time)}
                 </div>
                 <div className="flex items-center gap-3 text-gray-600 font-medium">
                   <div className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400">
                     <MapPin className="w-5 h-5" />
                   </div>
-                  {activeEvent.location}
+                  {t(activeEvent.location)}
                 </div>
               </div>
 
               <div className="prose prose-lg prose-gray max-w-none pb-8">
-                {activeEvent.fullDesc.map((paragraph, idx) => (
+                {(t(activeEvent.fullDesc, { returnObjects: true }) as string[]).map((paragraph, idx) => (
                   <p key={idx} className="text-gray-600 leading-relaxed mb-6">
                     {paragraph}
                   </p>
@@ -279,13 +267,13 @@ export function FutureEventsBlock() {
 
             <div className="shrink-0 p-6 sm:px-10 sm:py-8 bg-gray-50 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-4">
               <Text className="text-gray-500 font-medium text-sm text-center sm:text-left">
-                Ready to make an impact? Secure your spot now.
+                {t("FutureEventsBlock.modal.footerText")}
               </Text>
-              <Button 
+              <Button
                 onClick={() => window.location.href = activeEvent.formLink}
-                className="w-full sm:w-auto px-8 py-4 rounded-full bg-primary-500 text-white hover:bg-primary-600 shadow-lg hover:-translate-y-1 active:scale-95 transition-all duration-300"
+                className="w-full sm:w-auto px-8 py-4 rounded-full bg-primary-500 text-white hover:bg-primary-600 shadow-lg hover:-translate-y-1 active:scale-95 transition-all duration-300 group"
               >
-                Register for Event <ArrowRight className="w-5 h-5 ml-2" />
+                {t("FutureEventsBlock.buttons.registerForEvent")} <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
             </div>
 

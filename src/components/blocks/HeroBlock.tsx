@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 import { FadeIn } from "../utils/FadeIn";
 
 export function HeroBlock() {
-  const { t } = useTranslation();
+  const { t } = useTranslation("home");
 
   return (
     <section className="relative w-full min-h-[90vh] overflow-hidden bg-accent-50 pt-20 md:pt-32 pb-32 md:pb-48">
@@ -27,7 +27,7 @@ export function HeroBlock() {
 
             <div className="opacity-0 animate-fade-in-up inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/60 backdrop-blur-sm border border-white/80 shadow-sm mb-6 text-secondary-600 font-bold text-sm tracking-widest uppercase">
               <Sparkles className="h-4 w-4" />
-              {t("hero.tagline", "Find Your Spark")}
+              {t("HeroBlock.tagline")}
             </div>
 
             <FadeIn delay={150} direction="left">
@@ -35,24 +35,21 @@ export function HeroBlock() {
                 level={1}
                 className="text-5xl sm:text-6xl lg:text-7xl font-display tracking-tight text-gray-900 leading-[1.1] drop-shadow-sm mb-6"
               >
-                {t("hero.title", "Spark Change on Campus.")}
+                {t("HeroBlock.title")}
               </Heading>
             </FadeIn>
 
 
             <FadeIn delay={300} direction="left">
               <Text className="text-lg sm:text-xl text-gray-600 max-w-xl leading-relaxed mb-10">
-                {t(
-                  "hero.subtitle",
-                  "Join our university volunteer network. Build your skills, meet amazing people, and give back to the community in a meaningful way."
-                )}
+                {t("HeroBlock.subtitle")}
               </Text>
             </FadeIn>
 
             <FadeIn delay={450} direction="left">
               <Link to="/about" className="outline-none group">
                 <Button className="gap-3 px-8 py-6 rounded-full bg-primary-500 text-white shadow-lg shadow-primary-500/30 transition-all duration-300 hover:bg-primary-600 hover:scale-105 active:scale-95 text-lg font-bold">
-                  {t("hero.cta", "Get Involved")}
+                  {t("HeroBlock.cta")}
                   <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
                 </Button>
               </Link>
@@ -64,7 +61,7 @@ export function HeroBlock() {
             <div className="relative aspect-square w-full overflow-hidden animate-morph bg-secondary-100 border-8 border-white shadow-2xl">
               <Image
                 src="https://images.unsplash.com/photo-1445308124430-8357b98a6f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                alt={t("hero.imageAlt", "Students volunteering together")}
+                alt={t("HeroBlock.imageAlt")}
                 className="w-full h-full object-cover object-center"
               />
               <div className="absolute inset-0 bg-linear-to-tr from-secondary-500/20 to-transparent mix-blend-overlay" />
@@ -83,7 +80,7 @@ export function HeroBlock() {
       <div className="absolute bottom-20 left-0 w-full overflow-hidden bg-primary-500 py-3 rotate-1 scale-105 z-40 border-y-4 border-white shadow-xl">
         <div className="flex whitespace-nowrap animate-marquee">
           <span className="text-xl font-display font-bold tracking-widest text-white mx-4 uppercase">
-            {t("hero.marquee", "VOLUNTEER • CONNECT • GROW • VOLUNTEER • CONNECT • GROW • VOLUNTEER • CONNECT • GROW •")}
+            {t("HeroBlock.marquee")}
           </span>
         </div>
       </div>

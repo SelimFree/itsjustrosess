@@ -85,7 +85,7 @@ function CounterItem({ end, suffix = "", label, icon: Icon, delay = 0 }: Counter
 }
 
 export function ImpactCounter() {
-    const { t } = useTranslation();
+    const { t } = useTranslation("home");
 
     return (
         <section className="relative w-full bg-primary-500 py-32 md:py-48 overflow-hidden z-20 -mt-1 md:-mt-2">
@@ -107,10 +107,10 @@ export function ImpactCounter() {
 
                 <FadeIn className="text-center max-w-3xl mx-auto mb-20">
                     <Heading level={2} className="text-4xl md:text-5xl font-display tracking-wide text-white mb-6 drop-shadow-sm">
-                        {t("counter.title", "Small seeds, huge impact.")}
+                        {t("ImpactCounter.title")}
                     </Heading>
                     <Text className="text-lg md:text-xl text-white/90 leading-relaxed">
-                        {t("counter.subtitle", "Look at what we've accomplished together this semester. Every single pair of hands makes a difference.")}
+                        {t("ImpactCounter.subtitle")}
                     </Text>
                 </FadeIn>
 
@@ -119,20 +119,20 @@ export function ImpactCounter() {
                         icon={Sprout}
                         end={540}
                         suffix="+"
-                        label={t("counter.plants", "Trees & Seedlings Planted")}
+                        label={t("ImpactCounter.stats.plants")}
                         delay={0}
                     />
                     <CounterItem
                         icon={Users}
                         end={125}
-                        label={t("counter.volunteers", "Active Student Volunteers")}
+                        label={t("ImpactCounter.stats.volunteers")}
                         delay={200}
                     />
                     <CounterItem
                         icon={Sparkles}
                         end={850}
-                        suffix="h"
-                        label={t("counter.hours", "Community Hours Donated")}
+                        suffix="+"
+                        label={t("ImpactCounter.stats.hours")}
                         delay={400}
                     />
                 </div>

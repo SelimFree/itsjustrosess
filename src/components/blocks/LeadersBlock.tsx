@@ -8,53 +8,53 @@ import { InstagramIcon } from "../icons/InstagramIcon";
 import { TikTokIcon } from "../icons/TikTokIcon";
 import { LinkedInIcon } from "../icons/LinkedInIcon";
 
-export function LeadersBlock() {
-    const { t } = useTranslation();
-
-    const leaders = [
-        {
-            id: "leader-1",
-            name: "Emma Lin",
-            role: t("leaders.role.founder", "Founder & President"),
-            bio: t("leaders.bio.emma", "Plant mom to 40+ succulents. Usually found covered in potting soil or drinking iced matcha."),
-            image: "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-            blobColor: "bg-accent-100",
-            baseShape: "rounded-[40%_60%_70%_30%/40%_50%_60%_50%]",
-            hoverShape: "group-hover:rounded-[60%_40%_30%_70%/50%_60%_40%_50%]",
-            socials: {
-                instagram: "https://instagram.com",
-                tiktok: "https://tiktok.com",
-                linkedin: "https://linkedin.com",
-            }
-        },
-        {
-            id: "leader-2",
-            name: "Gabor Farkas",
-            role: t("leaders.role.operations", "Head of Operations"),
-            bio: t("leaders.bio.gabor", "The guy who actually knows how to organize a spreadsheet and make sure the shovels show up on time."),
-            image: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-            blobColor: "bg-primary-100",
-            baseShape: "rounded-[60%_40%_30%_70%/50%_60%_40%_50%]",
-            hoverShape: "group-hover:rounded-[50%_50%_70%_30%/40%_40%_60%_60%]",
-            socials: {
-                linkedin: "https://linkedin.com",
-            }
-        },
-        {
-            id: "leader-3",
-            name: "David Okafor",
-            role: t("leaders.role.community", "Community Lead"),
-            bio: t("leaders.bio.david", "Always smiling, always ready to hand you a pair of gloves. He is the heartbeat of our weekend digs."),
-            image: "https://images.unsplash.com/photo-1506803682981-6e718a9dd3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-            blobColor: "bg-secondary-100",
-            baseShape: "rounded-[50%_50%_70%_30%/40%_40%_60%_60%]",
-            hoverShape: "group-hover:rounded-[40%_60%_70%_30%/40%_50%_60%_50%]",
-            socials: {
-                instagram: "https://instagram.com",
-                tiktok: "https://tiktok.com",
-            }
+const leaders = [
+    {
+        id: "leader-1",
+        name: "Emma Lin",
+        role: "LeadersBlock.role.founder",
+        bio: "LeadersBlock.bio.emma",
+        image: "https://images.unsplash.com/photo-1524250502761-1ac6f2e30d43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        blobColor: "bg-accent-100",
+        baseShape: "rounded-[40%_60%_70%_30%/40%_50%_60%_50%]",
+        hoverShape: "group-hover:rounded-[60%_40%_30%_70%/50%_60%_40%_50%]",
+        socials: {
+            instagram: "https://instagram.com",
+            tiktok: "https://tiktok.com",
+            linkedin: "https://linkedin.com",
         }
-    ];
+    },
+    {
+        id: "leader-2",
+        name: "Gabor Farkas",
+        role: "LeadersBlock.role.operations",
+        bio: "LeadersBlock.bio.gabor",
+        image: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        blobColor: "bg-primary-100",
+        baseShape: "rounded-[60%_40%_30%_70%/50%_60%_40%_50%]",
+        hoverShape: "group-hover:rounded-[50%_50%_70%_30%/40%_40%_60%_60%]",
+        socials: {
+            linkedin: "https://linkedin.com",
+        }
+    },
+    {
+        id: "leader-3",
+        name: "David Okafor",
+        role: "LeadersBlock.role.community",
+        bio: "LeadersBlock.bio.david",
+        image: "https://images.unsplash.com/photo-1506803682981-6e718a9dd3ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+        blobColor: "bg-secondary-100",
+        baseShape: "rounded-[50%_50%_70%_30%/40%_40%_60%_60%]",
+        hoverShape: "group-hover:rounded-[40%_60%_70%_30%/40%_50%_60%_50%]",
+        socials: {
+            instagram: "https://instagram.com",
+            tiktok: "https://tiktok.com",
+        }
+    }
+];
+
+export function LeadersBlock() {
+    const { t } = useTranslation("about");
 
     return (
         <section className="relative w-full bg-gray-50 py-32 md:py-40 z-20">
@@ -76,10 +76,10 @@ export function LeadersBlock() {
 
                 <FadeIn className="text-center max-w-2xl mx-auto mb-20 md:mb-28">
                     <Heading level={2} className="text-4xl md:text-5xl font-display tracking-wide text-gray-900 mb-6">
-                        {t("leaders.headline", "Meet the roots of our community.")}
+                        {t("LeadersBlock.headline")}
                     </Heading>
                     <Text className="text-lg md:text-xl text-gray-600 leading-relaxed">
-                        {t("leaders.subheadline", "A slightly chaotic, heavily caffeinated group of students who just really love plants and making a difference.")}
+                        {t("LeadersBlock.subheadline")}
                     </Text>
                 </FadeIn>
 
@@ -114,11 +114,11 @@ export function LeadersBlock() {
                             </Heading>
 
                             <Text className="text-sm font-bold tracking-widest text-primary-500 uppercase mb-4">
-                                {leader.role}
+                                {t(leader.role)}
                             </Text>
 
                             <Text className="text-gray-600 leading-relaxed mb-6 max-w-sm">
-                                {leader.bio}
+                                {t(leader.bio)}
                             </Text>
 
                             <div className="flex gap-4 min-h-10">
