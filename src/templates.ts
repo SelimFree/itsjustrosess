@@ -1,6 +1,6 @@
-const WEBSITE_URL = "https://www.itsjustrosess.selim-altayev.workers.dev";
+const WEBSITE_URL = "https://itsjustrosess.selim-altayev.workers.dev";
 const COMPANY_NAME = "It's Just Roses";
-const LOGO_URL = "https://www.itsjustrosess.selim-altayev.workers.dev/android-chrome-512x512.png";
+const LOGO_URL = "https://itsjustrosess.selim-altayev.workers.dev/android-chrome-512x512.png";
 
 interface AutoReplyTranslation {
   subject: string;
