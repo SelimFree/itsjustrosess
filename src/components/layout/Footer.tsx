@@ -4,7 +4,7 @@ import { cn } from "../../lib/utils";
 import { Text } from "../ui/Text";
 import { List, ListItem } from "../ui/List";
 import type { NavLinkItem } from "./Layout";
-import { RoseLogo } from "../ui/RoseLogo";
+import { RoseLogo } from "../icons/RoseLogo";
 import { useTranslation } from "react-i18next";
 import { useAppContext } from "../../context/AppContext";
 

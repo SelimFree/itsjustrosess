@@ -6,7 +6,7 @@ import { cn } from "../../lib/utils";
 import type { NavLinkItem } from "./Layout";
 import { LanguageSwitcher } from "../ui/LanguageSwitcher";
 import { useTranslation } from "react-i18next";
-import { RoseLogo } from "../ui/RoseLogo";
+import { RoseLogo } from "../icons/RoseLogo";
 
 export interface NavbarProps extends ComponentProps<"header"> {
   links: NavLinkItem[];
