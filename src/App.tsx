@@ -11,6 +11,7 @@ const TermsPage = lazy(() => import("./pages/TermsPage"));
 const CookiePage = lazy(() => import("./pages/CookiePage"));
 
 const AboutPage = lazy(() => import("./pages/AboutPage"));
+const EventsPage = lazy(() => import("./pages/EventsPage"));
 
 const router = createBrowserRouter([
   {
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <HomePage /> },
       { path: "about", element: <AboutPage /> },
+      { path: "events", element: <EventsPage /> },
 
       { path: "privacy", element: <PrivacyPage /> },
       { path: "terms", element: <TermsPage /> },
