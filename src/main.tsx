@@ -6,6 +6,6 @@ import './i18n';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App companyName="Landing Template" country="Hungary" languages={[{ code: "en", label: "English" }, { code: "ro", label: "Romanian" }]}/>
+    <App companyName="It's Just Rosess" country="Romania" languages={[{ code: "en", label: "English" }, { code: "ro", label: "Romanian" }]}/>
   </StrictMode>,
 )
