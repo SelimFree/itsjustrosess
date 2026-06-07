@@ -16,6 +16,7 @@ interface InquiryPayload {
   company: string;
   email: string;
   department: string;
+  event?: string;
   message: string;
   user_lang: string;
 }
@@ -33,6 +34,7 @@ export default {
           company,
           email,
           department,
+          event,
           message,
           user_lang,
         } = body;
@@ -45,21 +47,24 @@ export default {
         const localizedSubject =
           autoReplyTranslations[user_lang]?.subject ||
           autoReplyTranslations["en"].subject;
-        const fullName = `${firstName} ${lastName}`;
+
+        const fromEmail = `It's Just Roses <${env.RESEND_OWNER_EMAIL}>`;
 
         const ownerEmailPayload = fetch("https://api.resend.com/emails", {
           method: "POST",
           headers: resendHeaders,
           body: JSON.stringify({
-            from: `Corporate Portal <${env.RESEND_OWNER_EMAIL}>`,
+            from: fromEmail,
             to: [env.RESEND_OWNER_EMAIL],
             reply_to: email,
-            subject: `Trade Inquiry: ${company} (${department})`,
+            subject: `New Inquiry: ${department} from ${firstName} ${lastName}`,
             html: getOwnerEmailHtml(
-              fullName,
+              firstName,
+              lastName,
               company,
               email,
               department,
+              event || "",
               message,
             ),
           }),
@@ -69,7 +74,7 @@ export default {
           method: "POST",
           headers: resendHeaders,
           body: JSON.stringify({
-            from: `Meray Global <${env.RESEND_OWNER_EMAIL}>`,
+            from: fromEmail,
             to: [email],
             subject: localizedSubject,
             html: getAutoReplyHtml(firstName, user_lang),
@@ -93,9 +98,7 @@ export default {
             owner: ownerErr,
             autoReply: autoErr,
           });
-          throw new Error(
-            "Transmission failure: One or more routing protocols failed.",
-          );
+          throw new Error("Failed to send message via email provider.");
         }
       } catch (error: unknown) {
         const errorMessage =
