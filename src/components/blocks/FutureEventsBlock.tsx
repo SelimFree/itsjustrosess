@@ -177,9 +177,9 @@ export function FutureEventsBlock() {
                       <div className="flex gap-3 mt-auto pt-4 border-t border-gray-50">
                         <Button 
                           onClick={() => window.location.href = event.formLink}
-                          className="flex-1 rounded-full bg-gray-900 text-white hover:bg-primary-500 shadow-md hover:shadow-xl hover:-translate-y-1 active:scale-95 transition-all duration-300"
+                          className="flex-1 rounded-full bg-gray-900 text-white group-hover:bg-primary-500 shadow-md hover:shadow-xl hover:-translate-y-1 active:scale-95 transition-all duration-300"
                         >
-                          Register <ArrowRight className="w-4 h-4 ml-2" />
+                          Register <ArrowRight className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                         </Button>
                         
                         <Button 

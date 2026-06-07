@@ -193,7 +193,7 @@ export function PastEventsBlock() {
                       onClick={() => setOpenDetailsId(event.id)}
                       className="w-full rounded-full border-gray-200 text-gray-900 hover:bg-gray-900 hover:text-white hover:border-gray-900 hover:-translate-y-1 active:scale-95 transition-all duration-300 shadow-sm hover:shadow-md py-6"
                     >
-                      Read Full Recap <ArrowRight className="w-5 h-5 ml-2" />
+                      Read Full Recap <ArrowRight className="w-5 h-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" />
                     </Button>
                   </div>
 

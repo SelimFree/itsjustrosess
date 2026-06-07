@@ -10,7 +10,7 @@ export default function NotFoundPage() {
   const { t } = useTranslation();
   
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-[70vh] py-24 px-6 text-center overflow-hidden">
+    <div className="relative flex flex-col items-center justify-center min-h-[70vh] py-48 px-6 text-center overflow-hidden">
       
       <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-primary-100/50 rounded-full blur-3xl -z-10 pointer-events-none" />
       <div className="absolute bottom-1/4 right-1/4 w-80 h-80 bg-accent-100/50 rounded-full blur-3xl -z-10 pointer-events-none" />
