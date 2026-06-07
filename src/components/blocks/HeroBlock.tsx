@@ -80,7 +80,7 @@ export function HeroBlock() {
         </FadeIn>
       </div>
 
-      <div className="absolute bottom-20 left-0 w-full overflow-hidden bg-primary-500 py-3 rotate-1 scale-105 z-20 border-y-4 border-white shadow-xl">
+      <div className="absolute bottom-20 left-0 w-full overflow-hidden bg-primary-500 py-3 rotate-1 scale-105 z-40 border-y-4 border-white shadow-xl">
         <div className="flex whitespace-nowrap animate-marquee">
           <span className="text-xl font-display font-bold tracking-widest text-white mx-4 uppercase">
             {t("hero.marquee", "VOLUNTEER • CONNECT • GROW • VOLUNTEER • CONNECT • GROW • VOLUNTEER • CONNECT • GROW •")}
